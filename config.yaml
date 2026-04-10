@@ -1,0 +1,21 @@
+# INPUT PATHS 
+active_dataset: BSD10k-v1.2  # Choose dataset, BSD35k-CS or BSD10k-v1.2
+datasets:
+  BSD10k-v1.2:
+    metadata_csv: "./data/BSD10k-v1.1/metadata/BSD10k_metadata.csv" # Metadata CSV file
+    audio_emb_folder: "./data/BSD10k-v1.1/features/clap_audio_embeddings" # Folder containing audio embeddings
+    text_emb_folder: "./data/BSD10k-v1.1/features/clap_text_embeddings" # Folder containing text embeddings
+    class_names: "./data/BSD10k-v1.1/metadata/BST_description.csv"  # Taxonomy CSV file containing class names
+
+  BSD35k-CS:
+    metadata_csv: "./data/BSD35k-CS/metadata/BSD35k-CS_metadata.csv"
+    audio_emb_folder: "./data/BSD35k-CS/features/clap_audio_embeddings"
+    text_emb_folder: "./data/BSD35k-CS/features/clap_text_embeddings"
+    class_names: "./data/BSD35k-CS/metadata/BST_description.csv"
+
+# OUTPUT PATHS
+output_path: "data"
+processed_dataset_csv: "processed_dataset.csv" # Output CSV file of dataset after processing
+class_dict_json: "class_dict.json" # Output class dictionary JSON file
+top_class_dict_json: "top_class_dict.json" # Output top class dictionary JSON file
+top_class_subclass_dict_json: "top_class_subclass_dict.json" # Output top class-subclass dictionary JSON file

@@ -1,0 +1,4 @@
+**/__pycache__/
+model_output*
+data/*
+!data/.gitkeep
