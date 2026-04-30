@@ -77,7 +77,17 @@ This script summarizes results for each model across all 5 folds.
 
 
 ## Baseline Results
-*Pending (to be added soon)*
+
+| Dataset    | Mode        | Hier. Accuracy       | Hier. F1            |
+|------------|-------------|----------------------|---------------------|
+| BSD10k     | Audio       | 77.36% ± 0.71%       | 76.11% ± 0.45%      |
+| BSD10k     | Multimodal  | 79.71% ± 0.82%       | **78.76% ± 0.79%**  |
+| BSD35k-CS  | Audio       | 70.90% ± 0.45%       | 70.19% ± 0.93%      |
+| BSD35k-CS  | Multimodal  | 80.63% ± 1.02%       | 79.77% ± 0.60%      |
+
+We report hierarchical accuracy and hierarchical F1 (both macro-averaged), where the later is used for ranking systems. For additional metrics, such as hierarchical precision, recall, standard micro and macro accuracy and top-level accuracy, you can run the baseline on the datasets yourself.
+
+> Note: These results may reflect internal biases or inaccuracies within each dataset, and training in combination or cross-evaluation may significantly change the results. BSD10k is annotated by experts and therefore expected to be more representative. BSD35k-CS is crowdsourced and may exhibit stronger biases, for example due to uneven contribution patterns from frequent contributors or noise introduced by inconsistencies in user annotations. Thus, higher scores on the evaluation dataset may require careful dataset selection, post-processing, or validation before adoption.
 
 ## Citations
 [1] Panagiota Anastasopoulou, Jessica Torrey, Xavier Serra, and Frederic Font. Heterogeneous sound classification with the Broad Sound Taxonomy and Dataset. In Proc. Workshop on Detection and Classification of Acoustic Scenes and Events (DCASE). 2024.
