@@ -62,10 +62,6 @@ def hierarchical_prf_weighted(subcat, predictions_gt, lambda_param=0.75):
   # Simlar to "hierarchical_prf", but including the lambda_param to control how much we value the correct top-level prediction
   # when second-level is wrong. "hierarchical_prf" is the same as "hierarchical_prf_weighted" when lambda_param=1.0.
 
-# Compute hierarchical weighted precision, recall and f-measure for a given category.
-# Similar to hierarchical_prf but with lambda_param controlling partial credit for correct top-level predictions.
-# hierarchical_prf is equivalent to hierarchical_prf_weighted with lambda_param=1.0.
-
   hPP = []
   hRR = []
   for count, (prediction, gt) in enumerate(predictions_gt):

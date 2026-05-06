@@ -1,4 +1,4 @@
 **/__pycache__/
-model_output*
+model*
 data/*
 !data/.gitkeep

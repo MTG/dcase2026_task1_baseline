@@ -2,10 +2,10 @@
 active_dataset: BSD10k-v1.2  # Choose dataset, BSD35k-CS or BSD10k-v1.2
 datasets:
   BSD10k-v1.2:
-    metadata_csv: "./data/BSD10k-v1.1/metadata/BSD10k_metadata.csv" # Metadata CSV file
-    audio_emb_folder: "./data/BSD10k-v1.1/features/clap_audio_embeddings" # Folder containing audio embeddings
-    text_emb_folder: "./data/BSD10k-v1.1/features/clap_text_embeddings" # Folder containing text embeddings
-    class_names: "./data/BSD10k-v1.1/metadata/BST_description.csv"  # Taxonomy CSV file containing class names
+    metadata_csv: "./data/BSD10k-v1.2/metadata/BSD10k_metadata.csv" # Metadata CSV file
+    audio_emb_folder: "./data/BSD10k-v1.2/features/clap_audio_embeddings" # Folder containing audio embeddings
+    text_emb_folder: "./data/BSD10k-v1.2/features/clap_text_embeddings" # Folder containing text embeddings
+    class_names: "./data/BSD10k-v1.2/metadata/BST_description.csv"  # Taxonomy CSV file containing class names
 
   BSD35k-CS:
     metadata_csv: "./data/BSD35k-CS/metadata/BSD35k-CS_metadata.csv"
