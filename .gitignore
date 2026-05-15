@@ -1,4 +1,4 @@
 **/__pycache__/
 model*
 data/*
-!data/.gitkeep
+!data/bst_colours.json
